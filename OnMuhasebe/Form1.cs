@@ -29,14 +29,14 @@ namespace OnMuhasebe
             dbConnection(1);
 
 
-            
+
         }
         private void dbConnection(int isOpen)
         {
-             sqlConn = new SqlConn();
+            sqlConn = new SqlConn();
             try
             {
-               if(isOpen == 1)
+                if (isOpen == 1)
                 {
                     sqlConn.sqlConnection.Open();
 
@@ -52,21 +52,21 @@ namespace OnMuhasebe
 
             }
             catch (Exception ex)
-            {       
+            {
                 MessageBox.Show(ex.ToString());
                 sqlConn.sqlConnection.Close();
 
             }
-        }    
-        private void loginCheck(string sirketAdi,string sifre)
+        }
+        private void loginCheck(string sirketAdi, string sifre)
         {
             queryLogin = "SELECT * FROM tblUser where sirketAdi=@sirketadi AND sifre=@sifre";
 
-          SqlConnection sqlConnection = new SqlConnection("Server=192.168.2.208;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816");
-        cmd = new SqlCommand(queryLogin,sqlConnection);
-            cmd.Parameters.AddWithValue("@sirketAdi",sirketAdi);
+            SqlConnection sqlConnection = new SqlConnection("Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816");
+            cmd = new SqlCommand(queryLogin, sqlConnection);
+            cmd.Parameters.AddWithValue("@sirketAdi", sirketAdi);
             cmd.Parameters.AddWithValue("@sifre", sifre);
-             sqlConnection.Open();  
+            sqlConnection.Open();
             reader = cmd.ExecuteReader();
             if (reader.Read())
             {
@@ -77,7 +77,7 @@ namespace OnMuhasebe
                 MessageBox.Show("Hatalý Oturum");
             }
         }
-       
+
     }
-    
+
 }
