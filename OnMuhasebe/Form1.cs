@@ -1,7 +1,7 @@
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
 using System.Drawing;
-
+using MaterialSkin.Controls;
 using System.Windows.Forms;
 
 namespace OnMuhasebe
@@ -14,50 +14,26 @@ namespace OnMuhasebe
         private SqlDataReader reader;
         private string queryLogin;
         private SqlConn sqlConn;
+        readonly MaterialSkin.MaterialSkinManager materialSkinManager;
+
         public Form1()
         {
+            sqlConn = new SqlConn();
+            sqlConn.sqlConnection.Open();
             InitializeComponent();
-        }
 
-        public object ToastNotificationManager { get; private set; }
+        }
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            sirketAdi = txtKadi.Text;
+            sirketAdi = txtSirketAdi.Text;
             sifre = txtSifre.Text;
             loginCheck(sirketAdi, sifre);
-            dbConnection(1);
-
-
 
         }
-        private void dbConnection(int isOpen)
-        {
-            sqlConn = new SqlConn();
-            try
-            {
-                if (isOpen == 1)
-                {
-                    sqlConn.sqlConnection.Open();
-
-
-                }
-                else
-                {
-                    sqlConn.sqlConnection.Close();
-                }
 
 
 
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                sqlConn.sqlConnection.Close();
-
-            }
-        }
         private void loginCheck(string sirketAdi, string sifre)
         {
             queryLogin = "SELECT * FROM tblUser where sirketAdi=@sirketadi AND sifre=@sifre";
@@ -71,6 +47,9 @@ namespace OnMuhasebe
             if (reader.Read())
             {
                 MessageBox.Show("Giriþ Baþarýlý");
+                frmAnaEkran frmAnaEkran = new frmAnaEkran();
+                frmAnaEkran.Show();
+                this.Hide();
             }
             else
             {

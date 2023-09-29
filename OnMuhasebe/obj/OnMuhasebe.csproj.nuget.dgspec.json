@@ -22,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/api": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -40,6 +41,22 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "DevExpress.AspNetCore.Dashboard": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Web": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "MaterialSkin": {
+              "target": "Package",
+              "version": "[0.2.1, )"
+            },
+            "MaterialSkin.2": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"

@@ -117,14 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-32, -16</value>
+    <value>0, 0</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>593, 659</value>
+    <value>595, 667</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
   </data>
@@ -136,7 +139,7 @@
     <value>Verdana, 18pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 113</value>
+    <value>697, 87</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>262, 36</value>
@@ -147,32 +150,18 @@
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="txtKadi.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="txtKadi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Disable</value>
-  </data>
-  <data name="txtKadi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>632, 213</value>
-  </data>
-  <data name="txtKadi.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtKadi.PlaceholderText" xml:space="preserve">
-    <value>Şirket Adı</value>
-  </data>
-  <data name="txtKadi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 38</value>
-  </data>
-  <data name="txtKadi.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
+  <data name="txtSifre.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="txtSifre.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="txtSifre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>632, 286</value>
+    <value>654, 317</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtSifre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="txtSifre.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -184,34 +173,55 @@
     <value>Şifre</value>
   </data>
   <data name="txtSifre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 38</value>
+    <value>345, 42</value>
   </data>
   <data name="txtSifre.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>632, 410</value>
+  <data name="txtSirketAdi.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 29</value>
+  <data name="txtSirketAdi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>button1</value>
+  <data name="txtSirketAdi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>654, 241</value>
   </data>
-  <data name="btnGiris.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="txtSirketAdi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>50, 50, 50, 50</value>
+  </data>
+  <data name="txtSirketAdi.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtSirketAdi.PlaceholderText" xml:space="preserve">
+    <value>Şirket Adı</value>
+  </data>
+  <data name="txtSirketAdi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 41</value>
+  </data>
+  <data name="txtSirketAdi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txtSirketAdi.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btnGiris.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <data name="btnGiris.Location" type="System.Drawing.Point, System.Drawing">
-    <value>632, 398</value>
+    <value>689, 409</value>
   </data>
   <data name="btnGiris.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 41</value>
+    <value>270, 48</value>
+  </data>
+  <data name="btnGiris.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="btnGiris.Text" xml:space="preserve">
     <value>Giriş Yap</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>915, 626</value>
+    <value>1058, 667</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Inherit</value>

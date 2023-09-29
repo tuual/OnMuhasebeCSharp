@@ -12,4 +12,10 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Biltekbilisim\.nuget\packages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Users\Biltekbilisim\.nuget\packages\devexpress.data\23.1.5</PkgDevExpress_Data>
+    <PkgDevExpress_Xpo Condition=" '$(PkgDevExpress_Xpo)' == '' ">C:\Users\Biltekbilisim\.nuget\packages\devexpress.xpo\23.1.5</PkgDevExpress_Xpo>
+    <PkgDevExpress_DataAccess Condition=" '$(PkgDevExpress_DataAccess)' == '' ">C:\Users\Biltekbilisim\.nuget\packages\devexpress.dataaccess\23.1.5</PkgDevExpress_DataAccess>
+    <PkgDevExpress_Web Condition=" '$(PkgDevExpress_Web)' == '' ">C:\Users\Biltekbilisim\.nuget\packages\devexpress.web\23.1.5</PkgDevExpress_Web>
+  </PropertyGroup>
 </Project>

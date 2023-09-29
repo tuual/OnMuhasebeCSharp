@@ -31,9 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            txtKadi = new TextBox();
             txtSifre = new TextBox();
-            button1 = new Button();
+            txtSirketAdi = new TextBox();
             btnGiris = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -50,21 +49,17 @@
             resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
             // 
-            // txtKadi
-            // 
-            resources.ApplyResources(txtKadi, "txtKadi");
-            txtKadi.Name = "txtKadi";
-            // 
             // txtSifre
             // 
             resources.ApplyResources(txtSifre, "txtSifre");
+            txtSifre.BackColor = Color.White;
             txtSifre.Name = "txtSifre";
             // 
-            // button1
+            // txtSirketAdi
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(txtSirketAdi, "txtSirketAdi");
+            txtSirketAdi.BackColor = Color.White;
+            txtSirketAdi.Name = "txtSirketAdi";
             // 
             // btnGiris
             // 
@@ -78,9 +73,8 @@
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(btnGiris);
-            Controls.Add(button1);
+            Controls.Add(txtSirketAdi);
             Controls.Add(txtSifre);
-            Controls.Add(txtKadi);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -94,9 +88,9 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private TextBox txtKadi;
         private TextBox txtSifre;
-        private Button button1;
+        private MaterialSkin.Controls.MaterialTextBox txtKadi;
+        private TextBox txtSirketAdi;
         private Button btnGiris;
     }
 }
