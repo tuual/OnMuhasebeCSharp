@@ -5,17 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Biltekbilisim\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\tualg\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\Biltekbilisim\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\tualg\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Users\Biltekbilisim\.nuget\packages\devexpress.data\23.1.5</PkgDevExpress_Data>
-    <PkgDevExpress_Xpo Condition=" '$(PkgDevExpress_Xpo)' == '' ">C:\Users\Biltekbilisim\.nuget\packages\devexpress.xpo\23.1.5</PkgDevExpress_Xpo>
-    <PkgDevExpress_DataAccess Condition=" '$(PkgDevExpress_DataAccess)' == '' ">C:\Users\Biltekbilisim\.nuget\packages\devexpress.dataaccess\23.1.5</PkgDevExpress_DataAccess>
-    <PkgDevExpress_Web Condition=" '$(PkgDevExpress_Web)' == '' ">C:\Users\Biltekbilisim\.nuget\packages\devexpress.web\23.1.5</PkgDevExpress_Web>
-  </PropertyGroup>
 </Project>

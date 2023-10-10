@@ -60,12 +60,13 @@
             materialTabControl1.Depth = 0;
             materialTabControl1.Dock = DockStyle.Fill;
             materialTabControl1.ImageList = ımageList1;
-            materialTabControl1.Location = new Point(3, 64);
+            materialTabControl1.Location = new Point(3, 48);
+            materialTabControl1.Margin = new Padding(3, 2, 3, 2);
             materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             materialTabControl1.Multiline = true;
             materialTabControl1.Name = "materialTabControl1";
             materialTabControl1.SelectedIndex = 0;
-            materialTabControl1.Size = new Size(1313, 635);
+            materialTabControl1.Size = new Size(1148, 476);
             materialTabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -74,11 +75,13 @@
             tabPage1.Controls.Add(materialCard1);
             tabPage1.ImageKey = "square-kanban-svgrepo-com.png";
             tabPage1.Location = new Point(4, 39);
+            tabPage1.Margin = new Padding(3, 2, 3, 2);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1305, 592);
+            tabPage1.Padding = new Padding(3, 2, 3, 2);
+            tabPage1.Size = new Size(1140, 433);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Stok Takip";
+            tabPage1.Click += tabPage1_Click;
             // 
             // materialCard1
             // 
@@ -88,12 +91,12 @@
             materialCard1.Depth = 0;
             materialCard1.Dock = DockStyle.Top;
             materialCard1.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            materialCard1.Location = new Point(3, 3);
-            materialCard1.Margin = new Padding(14);
+            materialCard1.Location = new Point(3, 2);
+            materialCard1.Margin = new Padding(12, 10, 12, 10);
             materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             materialCard1.Name = "materialCard1";
-            materialCard1.Padding = new Padding(14);
-            materialCard1.Size = new Size(1299, 57);
+            materialCard1.Padding = new Padding(12, 10, 12, 10);
+            materialCard1.Size = new Size(1134, 43);
             materialCard1.TabIndex = 0;
             // 
             // materialButton2
@@ -104,8 +107,8 @@
             materialButton2.Depth = 0;
             materialButton2.HighEmphasis = true;
             materialButton2.Icon = null;
-            materialButton2.Location = new Point(148, 10);
-            materialButton2.Margin = new Padding(4, 6, 4, 6);
+            materialButton2.Location = new Point(123, 4);
+            materialButton2.Margin = new Padding(4);
             materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             materialButton2.Name = "materialButton2";
             materialButton2.NoAccentTextColor = Color.Empty;
@@ -124,8 +127,8 @@
             btnStokKart.Depth = 0;
             btnStokKart.HighEmphasis = true;
             btnStokKart.Icon = null;
-            btnStokKart.Location = new Point(18, 10);
-            btnStokKart.Margin = new Padding(4, 6, 4, 6);
+            btnStokKart.Location = new Point(16, 4);
+            btnStokKart.Margin = new Padding(4);
             btnStokKart.MouseState = MaterialSkin.MouseState.HOVER;
             btnStokKart.Name = "btnStokKart";
             btnStokKart.NoAccentTextColor = Color.Empty;
@@ -141,9 +144,10 @@
             tabPage2.BackColor = Color.White;
             tabPage2.ImageKey = "buy-svgrepo-com.png";
             tabPage2.Location = new Point(4, 39);
+            tabPage2.Margin = new Padding(3, 2, 3, 2);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1305, 592);
+            tabPage2.Padding = new Padding(3, 2, 3, 2);
+            tabPage2.Size = new Size(1140, 433);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Alış Satış";
             // 
@@ -152,20 +156,23 @@
             tabPage3.BackColor = Color.White;
             tabPage3.ImageKey = "person-team-svgrepo-com.png";
             tabPage3.Location = new Point(4, 39);
+            tabPage3.Margin = new Padding(3, 2, 3, 2);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(1305, 592);
+            tabPage3.Size = new Size(1140, 433);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Personeller";
             // 
             // frmAnaEkran
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1319, 702);
+            ClientSize = new Size(1154, 526);
             Controls.Add(materialTabControl1);
             DrawerShowIconsWhenHidden = true;
             DrawerTabControl = materialTabControl1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmAnaEkran";
+            Padding = new Padding(3, 48, 3, 2);
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ön Muhasebe";
             Load += frmAnaEkran_Load;

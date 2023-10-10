@@ -2,15 +2,13 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.AspNetCore.Dashboard" Version="23.1.5" />
-    <PackageReference Include="DevExpress.Web" Version="23.1.5" />
     <PackageReference Include="MaterialSkin" Version="0.2.1" />
     <PackageReference Include="MaterialSkin.2" Version="2.3.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />

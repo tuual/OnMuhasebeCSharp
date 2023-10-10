@@ -120,3 +120,17 @@ C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebeCSharp\OnMuhasebe
 C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebeCSharp\OnMuhasebe\bin\Debug\net6.0-windows\zh-Hans\System.Private.ServiceModel.resources.dll
 C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebeCSharp\OnMuhasebe\bin\Debug\net6.0-windows\zh-Hant\System.Private.ServiceModel.resources.dll
 C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebeCSharp\OnMuhasebe\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.dll
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\refint\OnMuhasebe.dll
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.pdb
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.csproj.AssemblyReference.cache
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.Form1.resources
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.frmAnaEkran.resources
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.Properties.Resources.resources
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.Form1.tr-TR.resources
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.csproj.GenerateResource.cache
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.AssemblyInfoInputs.cache
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.AssemblyInfo.cs
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\OnMuhasebe.csproj.CoreCompileInputs.cache
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Debug\net6.0-windows\tr-TR\OnMuhasebe.resources.dll
