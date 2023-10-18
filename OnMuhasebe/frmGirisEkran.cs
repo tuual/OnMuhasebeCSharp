@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin.Controls;
+using System.Windows;
+using Microsoft.Toolkit.Uwp.Notifications;
+using System.IO;
+using System.Security.Policy;
 
 namespace OnMuhasebe
 {
@@ -66,10 +70,11 @@ namespace OnMuhasebe
                 reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    MessageBox.Show("Giriş Başarılı");
+                    //MessageBox.Show("Giriş Başarılı");
                     frmAnaEkran frmAnaEkran = new frmAnaEkran();
                     frmAnaEkran.Show();
                     this.Hide();
+                    showNotification();
                 }
                 else
                 {
@@ -80,6 +85,12 @@ namespace OnMuhasebe
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+        }
+        private void showNotification()
+        {
+
+
 
         }
     }

@@ -52,9 +52,17 @@
               "target": "Package",
               "version": "[2.3.1, )"
             },
+            "Microsoft.Toolkit.Uwp.Notifications": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "Uno.UI": {
+              "target": "Package",
+              "version": "[4.10.26, )"
             }
           },
           "imports": [

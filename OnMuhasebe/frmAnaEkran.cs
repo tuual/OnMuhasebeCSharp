@@ -36,5 +36,12 @@ namespace OnMuhasebe
         {
 
         }
+
+        private void btnStokKart_Click(object sender, EventArgs e)
+        {
+            frmStokKartEkle stokKartEkle = new frmStokKartEkle();
+            stokKartEkle.Show();
+
+        }
     }
 }

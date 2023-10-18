@@ -138,6 +138,7 @@
             btnStokKart.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnStokKart.UseAccentColor = false;
             btnStokKart.UseVisualStyleBackColor = true;
+            btnStokKart.Click += btnStokKart_Click;
             // 
             // tabPage2
             // 
