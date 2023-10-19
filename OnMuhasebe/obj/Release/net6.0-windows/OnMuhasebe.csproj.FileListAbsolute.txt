@@ -1,0 +1,14 @@
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.csproj.AssemblyReference.cache
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.Form1.resources
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.frmAnaEkran.resources
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.Properties.Resources.resources
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.Form1.tr-TR.resources
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.csproj.GenerateResource.cache
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.AssemblyInfoInputs.cache
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.AssemblyInfo.cs
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.csproj.CoreCompileInputs.cache
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\tr-TR\OnMuhasebe.resources.dll
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.dll
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\refint\OnMuhasebe.dll
+C:\Users\tualg\Source\Repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows\OnMuhasebe.pdb

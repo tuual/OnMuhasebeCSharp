@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "OnMuhasebe": {
+      "commandName": "Project",
+      "sqlDebugging": false
+    }
+  }
+}

@@ -31,5 +31,17 @@ namespace OnMuhasebe
 
 
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStokKart_Click(object sender, EventArgs e)
+        {
+            frmStokKartEkle stokKartEkle = new frmStokKartEkle();
+            stokKartEkle.Show();
+
+        }
     }
 }

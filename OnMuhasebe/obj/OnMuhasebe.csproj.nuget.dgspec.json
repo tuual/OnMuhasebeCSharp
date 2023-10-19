@@ -18,7 +18,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -27,7 +27,7 @@
         },
         "frameworks": {
           "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows",
+            "targetAlias": "net6.0-windows7.0",
             "projectReferences": {}
           }
         },
@@ -39,16 +39,8 @@
       },
       "frameworks": {
         "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+          "targetAlias": "net6.0-windows7.0",
           "dependencies": {
-            "DevExpress.AspNetCore.Dashboard": {
-              "target": "Package",
-              "version": "[23.1.5, )"
-            },
-            "DevExpress.Web": {
-              "target": "Package",
-              "version": "[23.1.5, )"
-            },
             "MaterialSkin": {
               "target": "Package",
               "version": "[0.2.1, )"
@@ -57,9 +49,17 @@
               "target": "Package",
               "version": "[2.3.1, )"
             },
+            "Microsoft.Toolkit.Uwp.Notifications": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "Uno.UI": {
+              "target": "Package",
+              "version": "[4.10.26, )"
             }
           },
           "imports": [
