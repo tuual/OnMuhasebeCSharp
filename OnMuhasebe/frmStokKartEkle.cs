@@ -25,7 +25,6 @@ namespace OnMuhasebe
         {
             InitializeComponent();
             sqlConn = new SqlConn();
-
             materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
             materialSkinManager.EnforceBackcolorOnAllComponents = true;
             materialSkinManager.AddFormToManage(this);
@@ -46,18 +45,39 @@ namespace OnMuhasebe
         }
         private void insertData()
         {
-            String query = "INSERT INTO tblStokEkle (stokKodu,stokIsim,stokMiktar,stokAciklama,stokDeposu,stokKdvOrani,stokBarkod) VALUES (@stokkodu,@stokisim,@stokmiktar,@stokaciklama,@stokdeposu,@stokkdvorani,@stokbarkodno)";
+            String query = "INSERT INTO tblStokEkle (stokKodu,stokIsim,stokMiktar,stokAciklama,stokKdvOrani,stokBarkod) VALUES (@stokkodu,@stokisim,@stokmiktar,@stokaciklama,@stokkdvorani,@stokbarkodno)";
             try
             {
-                cmd.Parameters.AddWithValue("@stokkodu", txtStokKodu.Text);
-                cmd.Parameters.AddWithValue("@stokisim", txtStokisim.Text);
-                cmd.Parameters.AddWithValue("@stokmiktar", txtStokMiktar.Text);
-                cmd.Parameters.AddWithValue("@stokaciklama", txtStokAciklama.Text);
-                cmd.Parameters.AddWithValue("@stokdeposu", cbStokDeposu.Text.ToString());
-                cmd.Parameters.AddWithValue("@stokkdvorani", txtStokKdv.Text);
-                cmd.Parameters.AddWithValue("@stokbarkodno", txtBarkodNo.Text);
-                sqlConn.sqlConnection.Open();
-                int result = cmd.ExecuteNonQuery();
+               sqlConnection = new SqlConnection("Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816");
+
+     
+        
+                cmd = new SqlCommand(query, sqlConnection);
+                sqlConnection.Open();
+
+                if (!txtStokKodu.Text.Equals("") && !txtStokisim.Text.Equals("") && !txtStokMiktar.Text.Equals("") && !txtStokAciklama.Text.Equals("") && !txtStokKdv.Text.Equals("") && !txtBarkodNo.Text.Equals("")  )
+                {
+                    cmd.Parameters.AddWithValue("@stokkodu", txtStokKodu.Text);
+                    cmd.Parameters.AddWithValue("@stokisim", txtStokisim.Text);
+                    cmd.Parameters.AddWithValue("@stokmiktar", txtStokMiktar.Text);
+                    cmd.Parameters.AddWithValue("@stokaciklama", txtStokAciklama.Text);
+                    cmd.Parameters.AddWithValue("@stokkdvorani", txtStokKdv.Text);
+                    cmd.Parameters.AddWithValue("@stokbarkodno", txtBarkodNo.Text);
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Kayıt Başarıyla Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtBarkodNo.Text = "";
+                    txtStokKodu.Text = "";
+                    txtStokKdv.Text = "";
+                    txtStokisim.Text = "";
+                    txtStokAciklama.Text = "";
+                    txtStokMiktar.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Boş Bırakılamaz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+              
             }
             catch (Exception ex)
             {
