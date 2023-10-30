@@ -30,11 +30,15 @@
         {
             txtSirketAdi = new MaterialSkin.Controls.MaterialTextBox2();
             txtSifre = new MaterialSkin.Controls.MaterialTextBox2();
-            btnGiris = new MaterialSkin.Controls.MaterialButton();
             panel1 = new Panel();
+            materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            panel3 = new Panel();
+            btnGiris = new MaterialSkin.Controls.MaterialButton();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            materialCard1.SuspendLayout();
+            panel3.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -49,7 +53,7 @@
             txtSirketAdi.HideSelection = true;
             txtSirketAdi.Hint = "Şirket Adı";
             txtSirketAdi.LeadingIcon = null;
-            txtSirketAdi.Location = new Point(13, 94);
+            txtSirketAdi.Location = new Point(24, 102);
             txtSirketAdi.MaxLength = 32767;
             txtSirketAdi.MouseState = MaterialSkin.MouseState.OUT;
             txtSirketAdi.Name = "txtSirketAdi";
@@ -61,7 +65,7 @@
             txtSirketAdi.SelectionLength = 0;
             txtSirketAdi.SelectionStart = 0;
             txtSirketAdi.ShortcutsEnabled = true;
-            txtSirketAdi.Size = new Size(347, 48);
+            txtSirketAdi.Size = new Size(315, 48);
             txtSirketAdi.TabIndex = 1;
             txtSirketAdi.TabStop = false;
             txtSirketAdi.TextAlign = HorizontalAlignment.Center;
@@ -78,7 +82,7 @@
             txtSifre.HideSelection = true;
             txtSifre.Hint = "Şifre";
             txtSifre.LeadingIcon = null;
-            txtSifre.Location = new Point(13, 156);
+            txtSifre.Location = new Point(24, 159);
             txtSifre.MaxLength = 32767;
             txtSifre.MouseState = MaterialSkin.MouseState.OUT;
             txtSifre.Name = "txtSifre";
@@ -90,27 +94,66 @@
             txtSifre.SelectionLength = 0;
             txtSifre.SelectionStart = 0;
             txtSifre.ShortcutsEnabled = true;
-            txtSifre.Size = new Size(347, 48);
+            txtSifre.Size = new Size(315, 48);
             txtSifre.TabIndex = 2;
             txtSifre.TabStop = false;
             txtSifre.TextAlign = HorizontalAlignment.Center;
             txtSifre.TrailingIcon = null;
             txtSifre.UseSystemPasswordChar = false;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(materialCard1);
+            panel1.Dock = DockStyle.Right;
+            panel1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            panel1.Location = new Point(588, 64);
+            panel1.Name = "panel1";
+            panel1.Padding = new Padding(10, 0, 10, 0);
+            panel1.Size = new Size(373, 490);
+            panel1.TabIndex = 4;
+            // 
+            // materialCard1
+            // 
+            materialCard1.BackColor = Color.FromArgb(255, 255, 255);
+            materialCard1.Controls.Add(panel3);
+            materialCard1.Controls.Add(txtSirketAdi);
+            materialCard1.Controls.Add(txtSifre);
+            materialCard1.Depth = 0;
+            materialCard1.Dock = DockStyle.Fill;
+            materialCard1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            materialCard1.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            materialCard1.Location = new Point(10, 0);
+            materialCard1.Margin = new Padding(12, 10, 12, 10);
+            materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
+            materialCard1.Name = "materialCard1";
+            materialCard1.Padding = new Padding(12, 10, 12, 10);
+            materialCard1.Size = new Size(353, 490);
+            materialCard1.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(btnGiris);
+            panel3.Location = new Point(52, 285);
+            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(265, 34);
+            panel3.TabIndex = 4;
+            // 
             // btnGiris
             // 
             btnGiris.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             btnGiris.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnGiris.Depth = 0;
+            btnGiris.Dock = DockStyle.Fill;
             btnGiris.HighEmphasis = true;
             btnGiris.Icon = null;
-            btnGiris.Location = new Point(157, 295);
+            btnGiris.Location = new Point(0, 0);
             btnGiris.Margin = new Padding(4, 6, 4, 6);
             btnGiris.MouseState = MaterialSkin.MouseState.HOVER;
             btnGiris.Name = "btnGiris";
             btnGiris.NoAccentTextColor = Color.Empty;
-            btnGiris.Padding = new Padding(5);
-            btnGiris.Size = new Size(89, 36);
+            btnGiris.Padding = new Padding(5, 5, 5, 5);
+            btnGiris.Size = new Size(265, 34);
             btnGiris.TabIndex = 3;
             btnGiris.Text = "Giriş Yap";
             btnGiris.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -119,18 +162,6 @@
             btnGiris.UseMnemonic = false;
             btnGiris.UseVisualStyleBackColor = true;
             btnGiris.Click += btnGiris_Click;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(txtSirketAdi);
-            panel1.Controls.Add(btnGiris);
-            panel1.Controls.Add(txtSifre);
-            panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(588, 64);
-            panel1.Name = "panel1";
-            panel1.Padding = new Padding(10, 0, 10, 0);
-            panel1.Size = new Size(373, 490);
-            panel1.TabIndex = 4;
             // 
             // panel2
             // 
@@ -148,7 +179,7 @@
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(585, 490);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -163,7 +194,9 @@
             Name = "frmGirisEkran";
             Text = "Giriş Ekranı";
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            materialCard1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -172,9 +205,11 @@
         #endregion
         private MaterialSkin.Controls.MaterialTextBox2 txtSirketAdi;
         private MaterialSkin.Controls.MaterialTextBox2 txtSifre;
-        private MaterialSkin.Controls.MaterialButton btnGiris;
         private Panel panel1;
         private Panel panel2;
         private PictureBox pictureBox1;
+        private MaterialSkin.Controls.MaterialCard materialCard1;
+        private MaterialSkin.Controls.MaterialButton btnGiris;
+        private Panel panel3;
     }
 }

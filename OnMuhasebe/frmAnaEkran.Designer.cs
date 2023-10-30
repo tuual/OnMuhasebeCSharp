@@ -33,6 +33,7 @@
             ımageList1 = new ImageList(components);
             materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             tabPage1 = new TabPage();
+            dataGridView1 = new DataGridView();
             materialCard1 = new MaterialSkin.Controls.MaterialCard();
             materialButton2 = new MaterialSkin.Controls.MaterialButton();
             btnStokKart = new MaterialSkin.Controls.MaterialButton();
@@ -40,6 +41,7 @@
             tabPage3 = new TabPage();
             materialTabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             materialCard1.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,6 +74,7 @@
             // tabPage1
             // 
             tabPage1.BackColor = Color.White;
+            tabPage1.Controls.Add(dataGridView1);
             tabPage1.Controls.Add(materialCard1);
             tabPage1.ImageKey = "square-kanban-svgrepo-com.png";
             tabPage1.Location = new Point(4, 39);
@@ -82,6 +85,24 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Stok Takip";
             tabPage1.Click += tabPage1_Click;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(3, 45);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(1134, 386);
+            dataGridView1.TabIndex = 1;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // materialCard1
             // 
@@ -118,6 +139,7 @@
             materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             materialButton2.UseAccentColor = false;
             materialButton2.UseVisualStyleBackColor = true;
+            materialButton2.Click += materialButton2_Click;
             // 
             // btnStokKart
             // 
@@ -127,7 +149,7 @@
             btnStokKart.Depth = 0;
             btnStokKart.HighEmphasis = true;
             btnStokKart.Icon = null;
-            btnStokKart.Location = new Point(16, 4);
+            btnStokKart.Location = new Point(4, 4);
             btnStokKart.Margin = new Padding(4);
             btnStokKart.MouseState = MaterialSkin.MouseState.HOVER;
             btnStokKart.Name = "btnStokKart";
@@ -179,6 +201,7 @@
             Load += frmAnaEkran_Load;
             materialTabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             materialCard1.ResumeLayout(false);
             materialCard1.PerformLayout();
             ResumeLayout(false);
@@ -193,5 +216,6 @@
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialButton btnStokKart;
         private MaterialSkin.Controls.MaterialButton materialButton2;
+        private DataGridView dataGridView1;
     }
 }
