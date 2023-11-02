@@ -1,6 +1,6 @@
 ﻿namespace OnMuhasebe
 {
-    partial class frmStokKartEkle
+    partial class frmGuncelleme
     {
         /// <summary>
         /// Required designer variable.
@@ -47,12 +47,11 @@
             // 
             panel1.Controls.Add(materialCard1);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(3, 88);
+            panel1.Location = new Point(3, 64);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1048, 615);
-            panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
+            panel1.Size = new Size(1081, 577);
+            panel1.TabIndex = 1;
             // 
             // materialCard1
             // 
@@ -72,7 +71,7 @@
             materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             materialCard1.Name = "materialCard1";
             materialCard1.Padding = new Padding(14);
-            materialCard1.Size = new Size(1048, 615);
+            materialCard1.Size = new Size(1081, 577);
             materialCard1.TabIndex = 8;
             // 
             // panel3
@@ -98,11 +97,11 @@
             materialButton1.NoAccentTextColor = Color.Empty;
             materialButton1.Size = new Size(222, 49);
             materialButton1.TabIndex = 6;
-            materialButton1.Text = "Kart Oluştur";
+            materialButton1.Text = "Güncelle";
             materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             materialButton1.UseAccentColor = false;
             materialButton1.UseVisualStyleBackColor = true;
-            materialButton1.Click += materialButton1_Click_1;
+            materialButton1.Click += materialButton1_Click;
             // 
             // txtStokMiktar
             // 
@@ -146,7 +145,7 @@
             txtStokKodu.LeadingIcon = null;
             txtStokKodu.Location = new Point(138, 149);
             txtStokKodu.Margin = new Padding(3, 4, 3, 4);
-            txtStokKodu.MaxLength = 32767;
+            txtStokKodu.MaxLength = 40;
             txtStokKodu.MouseState = MaterialSkin.MouseState.OUT;
             txtStokKodu.Name = "txtStokKodu";
             txtStokKodu.PasswordChar = '\0';
@@ -284,18 +283,16 @@
             txtStokKdv.TrailingIcon = null;
             txtStokKdv.UseSystemPasswordChar = false;
             // 
-            // frmStokKartEkle
+            // frmGuncelleme
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1054, 707);
+            ClientSize = new Size(1087, 644);
             Controls.Add(panel1);
-            FormStyle = FormStyles.ActionBar_64;
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frmStokKartEkle";
-            Padding = new Padding(3, 88, 3, 4);
+            Name = "frmGuncelleme";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Stok Kart Oluşturma";
+            Text = "Stok Kart Güncelleme";
+            Load += frmGuncelleme_Load;
             panel1.ResumeLayout(false);
             materialCard1.ResumeLayout(false);
             panel3.ResumeLayout(false);

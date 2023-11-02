@@ -40,7 +40,6 @@ namespace OnMuhasebe
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            insertData();
 
         }
         private void insertData()
@@ -48,14 +47,14 @@ namespace OnMuhasebe
             String query = "INSERT INTO tblStokEkle (stokKodu,stokIsim,stokMiktar,stokAciklama,stokKdvOrani,stokBarkod) VALUES (@stokkodu,@stokisim,@stokmiktar,@stokaciklama,@stokkdvorani,@stokbarkodno)";
             try
             {
-               sqlConnection = new SqlConnection("Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816");
+                sqlConnection = new SqlConnection("Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816");
 
-     
-        
+
+
                 cmd = new SqlCommand(query, sqlConnection);
                 sqlConnection.Open();
 
-                if (!txtStokKodu.Text.Equals("") && !txtStokisim.Text.Equals("") && !txtStokMiktar.Text.Equals("") && !txtStokAciklama.Text.Equals("") && !txtStokKdv.Text.Equals("") && !txtBarkodNo.Text.Equals("")  )
+                if (!txtStokKodu.Text.Equals("") && !txtStokisim.Text.Equals("") && !txtStokMiktar.Text.Equals("") && !txtStokAciklama.Text.Equals("") && !txtStokKdv.Text.Equals("") && !txtBarkodNo.Text.Equals(""))
                 {
                     cmd.Parameters.AddWithValue("@stokkodu", txtStokKodu.Text);
                     cmd.Parameters.AddWithValue("@stokisim", txtStokisim.Text);
@@ -77,7 +76,7 @@ namespace OnMuhasebe
                 {
                     MessageBox.Show("Boş Bırakılamaz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-              
+
             }
             catch (Exception ex)
             {
@@ -85,6 +84,11 @@ namespace OnMuhasebe
             }
 
 
+        }
+
+        private void materialButton1_Click_1(object sender, EventArgs e)
+        {
+            insertData();
         }
     }
 }

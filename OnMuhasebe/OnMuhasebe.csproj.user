@@ -7,6 +7,9 @@
     <Compile Update="frmGirisEkran.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmStokKartEkle.cs">
       <SubType>Form</SubType>
     </Compile>

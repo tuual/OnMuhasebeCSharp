@@ -19,6 +19,7 @@ namespace OnMuhasebe
         readonly MaterialSkin.MaterialSkinManager materialSkinManager;
         private SqlCommand cmd;
         private SqlConnection sqlCon;
+        public int id, id2;
 
         public frmAnaEkran()
         {
@@ -35,7 +36,7 @@ namespace OnMuhasebe
         {
 
 
-            tableUpdate();
+            tableUpdate("tblStokEkle", dataGridView1);
 
         }
 
@@ -50,15 +51,15 @@ namespace OnMuhasebe
             stokKartEkle.Show();
 
         }
-        private void tableUpdate()
+        private void tableUpdate(String tabloadi, DataGridView dt)
         {
-            dataGridView1.ReadOnly = true;
-            dataGridView1.AllowUserToDeleteRows = false;
+            dt.ReadOnly = true;
+            dt.AllowUserToDeleteRows = false;
 
 
 
 
-            string readQuery = "SELECT * FROM tblStokEkle";
+            string readQuery = "SELECT * FROM " + tabloadi;
             String connect = "Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816";
             using (SqlConnection connection = new SqlConnection(connect))
             {
@@ -67,8 +68,7 @@ namespace OnMuhasebe
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
 
-                    // DataGridView kontrolüne verileri yükle
-                    dataGridView1.DataSource = dataTable;
+                    dt.DataSource = dataTable;
                 }
             }
 
@@ -77,7 +77,7 @@ namespace OnMuhasebe
 
         private void materialButton2_Click(object sender, EventArgs e)
         {
-            tableUpdate();
+            tableUpdate("tblStokEkle", dataGridView1);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -87,28 +87,8 @@ namespace OnMuhasebe
                 try
                 {
                     DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
-                    int id = Convert.ToInt32(selectedRow.Cells["stokID"].Value);
-                    DialogResult dr = MessageBox.Show("Seçilen Stoğu Silmek İstiyor musunuz ? ", "Stok Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    id = Convert.ToInt32(selectedRow.Cells["stokID"].Value);
 
-                    switch (dr)
-                    {
-
-                        case DialogResult.Yes:
-                            String query = "DELETE FROM tblStokEkle WHERE stokID=" + id;
-                            String connect = "Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816";
-                            sqlCon = new SqlConnection(connect);
-                            cmd = new SqlCommand();
-                            cmd.Connection = sqlCon;
-                            sqlCon.Open();
-                            cmd.CommandText = query;
-                            cmd.ExecuteNonQuery();
-                            sqlCon.Close();
-                            dataGridView1.Refresh();
-                            break;
-                        case DialogResult.No:
-
-                            break;
-                    }
 
                 }
                 catch (Exception ex)
@@ -117,6 +97,101 @@ namespace OnMuhasebe
                 }
 
             }
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            frmGuncelleme frmguncelleme = new frmGuncelleme(this, id);
+            frmguncelleme.ShowDialog();
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            deleteData("tblStokEkle", "stokID", id.ToString());
+            tableUpdate("tblStokEkle", dataGridView1);
+
+        }
+
+        private void materialButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void materialTabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (materialTabControl1.SelectedTab == tabPage1)
+            {
+                tableUpdate("tblStokEkle", dataGridView1);
+            }
+            else if (materialTabControl1.SelectedTab == tabPage2)
+            {
+
+            }
+            else if (materialTabControl1.SelectedTab == tabPage3)
+            {
+                tableUpdate("tblUser", dataGridView2);
+
+            }
+        }
+        private void deleteData(String tabloadi, String idadi, String seciliId)
+        {
+            DialogResult dr = MessageBox.Show("Seçilen Satırı Silmek İstiyor musunuz ? ", "Veri Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            switch (dr)
+            {
+
+                case DialogResult.Yes:
+                    String query = "DELETE FROM " + tabloadi + " WHERE " + idadi + "=" + seciliId;
+                    String connect = "Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816";
+                    sqlCon = new SqlConnection(connect);
+                    cmd = new SqlCommand();
+                    cmd.Connection = sqlCon;
+                    sqlCon.Open();
+                    cmd.CommandText = query;
+                    cmd.ExecuteNonQuery();
+                    sqlCon.Close();
+                    break;
+                case DialogResult.No:
+
+                    break;
+            }
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                try
+                {
+                    DataGridViewRow selectedRow = dataGridView2.Rows[e.RowIndex];
+                    id2 = Convert.ToInt32(selectedRow.Cells["ID"].Value);
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+
+            }
+        }
+
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
+            deleteData("tblUser", "ID", id2.ToString());
+
+            tableUpdate("tblUser", dataGridView2);
+
+        }
+
+        private void materialButton6_Click(object sender, EventArgs e)
+        {
+            tableUpdate("tblUser", dataGridView2);
         }
     }
 }

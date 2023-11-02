@@ -3303,24 +3303,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tualg\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Biltekbilisim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tualg\\source\\repos\\OnMuhasebeCSharp\\OnMuhasebe\\OnMuhasebe.csproj",
+      "projectUniqueName": "C:\\Users\\Biltekbilisim\\source\\repos\\OnMuhasebeCSharp\\OnMuhasebe\\OnMuhasebe.csproj",
       "projectName": "OnMuhasebe",
-      "projectPath": "C:\\Users\\tualg\\source\\repos\\OnMuhasebeCSharp\\OnMuhasebe\\OnMuhasebe.csproj",
-      "packagesPath": "C:\\Users\\tualg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tualg\\source\\repos\\OnMuhasebeCSharp\\OnMuhasebe\\obj\\",
+      "projectPath": "C:\\Users\\Biltekbilisim\\source\\repos\\OnMuhasebeCSharp\\OnMuhasebe\\OnMuhasebe.csproj",
+      "packagesPath": "C:\\Users\\Biltekbilisim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Biltekbilisim\\source\\repos\\OnMuhasebeCSharp\\OnMuhasebe\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\tualg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Biltekbilisim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
