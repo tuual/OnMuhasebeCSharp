@@ -85,3 +85,5 @@ C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6
 C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows7.0\OnMuhasebe.genruntimeconfig.cache
 C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows7.0\ref\OnMuhasebe.dll
 C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows7.0\OnMuhasebe.frmGuncelleme.resources
+C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows7.0\OnMuhasebe.frmPersonelEkle.resources
+C:\Users\Biltekbilisim\source\repos\OnMuhasebeCSharp\OnMuhasebe\obj\Release\net6.0-windows7.0\OnMuhasebe.frmPersonelGuncelleme.resources

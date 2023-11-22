@@ -47,10 +47,10 @@
             // 
             panel1.Controls.Add(materialCard1);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(3, 88);
+            panel1.Location = new Point(3, 24);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1048, 615);
+            panel1.Size = new Size(1064, 563);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -72,7 +72,7 @@
             materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             materialCard1.Name = "materialCard1";
             materialCard1.Padding = new Padding(14);
-            materialCard1.Size = new Size(1048, 615);
+            materialCard1.Size = new Size(1064, 563);
             materialCard1.TabIndex = 8;
             // 
             // panel3
@@ -288,12 +288,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1054, 707);
+            ClientSize = new Size(1070, 591);
             Controls.Add(panel1);
-            FormStyle = FormStyles.ActionBar_64;
+            FormStyle = FormStyles.ActionBar_None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "frmStokKartEkle";
-            Padding = new Padding(3, 88, 3, 4);
+            Padding = new Padding(3, 24, 3, 4);
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Stok Kart Oluşturma";
             panel1.ResumeLayout(false);

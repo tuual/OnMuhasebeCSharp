@@ -76,7 +76,6 @@ namespace OnMuhasebe
         public void SetID()
         {
             anaEkranReferansi.id = stokId;
-            MessageBox.Show(stokId.ToString());
         }
 
 

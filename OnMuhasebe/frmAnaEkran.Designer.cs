@@ -241,7 +241,8 @@
             // 
             // dataGridView2
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.BackgroundColor = Color.White;
+            dataGridView2.ColumnHeadersHeight = 29;
             dataGridView2.Dock = DockStyle.Fill;
             dataGridView2.Location = new Point(0, 57);
             dataGridView2.Name = "dataGridView2";
@@ -309,6 +310,7 @@
             materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             materialButton5.UseAccentColor = false;
             materialButton5.UseVisualStyleBackColor = true;
+            materialButton5.Click += materialButton5_Click;
             // 
             // materialButton6
             // 

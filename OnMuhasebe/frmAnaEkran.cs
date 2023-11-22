@@ -102,7 +102,16 @@ namespace OnMuhasebe
         private void materialButton1_Click(object sender, EventArgs e)
         {
             frmGuncelleme frmguncelleme = new frmGuncelleme(this, id);
-            frmguncelleme.ShowDialog();
+
+            if (id == null || id == 0)
+            {
+                MessageBox.Show("Bir Satır Seçiniz.");
+
+            }
+            else
+            {
+                frmguncelleme.ShowDialog();
+            }
         }
 
         private void materialButton3_Click(object sender, EventArgs e)
@@ -114,6 +123,8 @@ namespace OnMuhasebe
 
         private void materialButton7_Click(object sender, EventArgs e)
         {
+            frmPersonelEkle frmprsnlekle = new frmPersonelEkle();
+            frmprsnlekle.Show();
 
         }
 
@@ -192,6 +203,23 @@ namespace OnMuhasebe
         private void materialButton6_Click(object sender, EventArgs e)
         {
             tableUpdate("tblUser", dataGridView2);
+        }
+
+        private void materialButton5_Click(object sender, EventArgs e)
+        {
+
+            frmPersonelGuncelleme frmpersonelguncelleme = new frmPersonelGuncelleme(this,id2);
+
+            if (id2 == null || id2 == 0)
+            {
+                MessageBox.Show("Bir Satır Seçiniz.");
+
+            }
+            else
+            {
+                frmpersonelguncelleme.ShowDialog();
+                
+            }
         }
     }
 }
