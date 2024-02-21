@@ -30,7 +30,7 @@ namespace OnMuhasebe
             materialSkinManager.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Indigo500, MaterialSkin.Primary.Indigo700
                 , MaterialSkin.Primary.Indigo100, MaterialSkin.Accent.Pink200, MaterialSkin.TextShade.WHITE);
 
-            String connect = "Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816";
+            String connect = "Server=;Database=OnMuhasebe;User Id=;Password=";
             sqlCon = new SqlConnection(connect);
         }
 
