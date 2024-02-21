@@ -62,7 +62,7 @@ namespace OnMuhasebe
             {
                 queryLogin = "SELECT * FROM tblUser where sirketAdi=@sirketadi AND sifre=@sifre";
 
-                SqlConnection sqlConnection = new SqlConnection("Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816");
+                SqlConnection sqlConnection = new SqlConnection("Server=;Database=OnMuhasebe;User Id=;Password=");
                 cmd = new SqlCommand(queryLogin, sqlConnection);
                 cmd.Parameters.AddWithValue("@sirketAdi", sirketAdi);
                 cmd.Parameters.AddWithValue("@sifre", sifre);
