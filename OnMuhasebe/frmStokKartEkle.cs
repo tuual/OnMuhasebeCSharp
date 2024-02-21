@@ -47,7 +47,7 @@ namespace OnMuhasebe
             String query = "INSERT INTO tblStokEkle (stokKodu,stokIsim,stokMiktar,stokAciklama,stokKdvOrani,stokBarkod) VALUES (@stokkodu,@stokisim,@stokmiktar,@stokaciklama,@stokkdvorani,@stokbarkodno)";
             try
             {
-                sqlConnection = new SqlConnection("Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816");
+                sqlConnection = new SqlConnection("Server=;Database=OnMuhasebe;User Id=;Password=");
 
 
 
