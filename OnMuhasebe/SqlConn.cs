@@ -12,7 +12,7 @@ namespace OnMuhasebe
 {
     class  SqlConn
     {
-        public SqlConnection sqlConnection = new SqlConnection("Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816");
+        public SqlConnection sqlConnection = new SqlConnection("Server=;Database=OnMuhasebe;User Id=;Password=");
    
     }
 }
