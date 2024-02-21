@@ -60,7 +60,7 @@ namespace OnMuhasebe
 
 
             string readQuery = "SELECT * FROM " + tabloadi;
-            String connect = "Server=213.254.137.231;Database=OnMuhasebe;User Id=biltekbilisim;Password=Bilisim20037816";
+            String connect = "Server=;Database=OnMuhasebe;User Id=;Password=";
             using (SqlConnection connection = new SqlConnection(connect))
             {
                 using (SqlDataAdapter adapter = new SqlDataAdapter(readQuery, connection))
